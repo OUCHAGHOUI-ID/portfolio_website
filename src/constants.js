@@ -37,10 +37,22 @@ export const techStack = [
 
 
 export const contactLinks = [
-  { name: 'Github', url: 'https://img.icons8.com/doodle/40/000000/github--v1.png', link: 'https://github.com/OUCHAGHOUI-ID' },
-  { name: 'LinkedIn', url: 'https://img.icons8.com/doodle/40/000000/linkedin--v2.png', link: 'https://www.linkedin.com/in/idriss-ouchaghoui-2b5ab9340' },
-  { name: 'Email', url: 'https://img.icons8.com/fluency/48/000000/new-post.png', link: 'mailto:drissouchaghoui119@gmail.com' },
-]
+  {
+    name: 'Github',
+    url: 'https://github.com/OUCHAGHOUI-ID',
+    icon: 'https://img.icons8.com/doodle/40/000000/github--v1.png',
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/idriss-ouchaghoui-2b5ab9340',
+    icon: 'https://img.icons8.com/doodle/40/000000/linkedin--v2.png',
+  },
+  {
+    name: 'Email',
+    url: 'mailto:drissouchaghoui119@gmail.com',
+    icon: 'https://img.icons8.com/fluency/48/000000/new-post.png',
+  },
+];
 
 
 

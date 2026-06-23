@@ -120,13 +120,16 @@ const Contact = () => {
             </div>
             <h1 className="text-3xl  font-bold">Social</h1>
             <ul className="flex">
-              {contactLinks.map((el) => (
+              {contactLinks.map((link) => (
                 <a
-                  href={el.link}
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noreferrer"
                   className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
                 >
-                  <img alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
+                  <img alt={link.name} src={link.icon} />
+                  <span className="text-sm mt-2 text-blue-700">{link.name}</span>
                 </a>
               ))}
             </ul>
