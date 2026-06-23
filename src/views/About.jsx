@@ -2,6 +2,9 @@ import React, { useContext } from "react";
 import { techStack } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
+import Skills from "../components/Skills";
+import Certifications from "../components/Certifications";
+import Experience from "../components/Experience";
 
 const About = () => {
   const theme = useContext(ThemeContext);
@@ -16,12 +19,12 @@ const About = () => {
               : "text-5xl font-bold px-4 md:px-0 text-center text-white"
           }
         >
-          About Me
+          À propos
         </h2>
         <div>
           <motion.div>
             <h4 className="mt-12 text-3xl font-semibold text-blue-500">
-              A bit about me
+              Profil
             </h4>
             <p
               className={
@@ -30,20 +33,17 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              I'm a self-taught web developer and Mobile App Developer with
-              experience in designing new features from ideation to production,
-              implementation of wireframes and design flows into high
-              performance software applications. I take into consideration the
-              user experience while writing reusable and efficient code. I
-              passionately combine good design, technology, and innovation in
-              all my projects, which I like to accompany from the first idea to
-              release.Currently, I'm focused on the backend development.
+              Étudiant ingénieur en Informatique, spécialisé en Ingénierie Logicielle
+              et Intelligence Artificielle. Passionné par le Machine Learning,
+              le Deep Learning et l’IA Générative, je conçois et développe des
+              applications web intelligentes, orientées données et résolutrices
+              de problèmes réels. Je suis disponible pour contribuer à des projets
+              innovants en IA et développement logiciel.
             </p>
           </motion.div>
-          <motion.div
-          >
-            <h4 className="mt-12 text-3xl font-semibold text-blue-500">
-              Technologies and Tools
+          <motion.div>
+            <h4 className={`mt-12 text-3xl font-semibold ${darkMode ? "text-blue-600" : "text-blue-300"}`}>
+              Technologies & outils
             </h4>
             <p
               className={
@@ -52,9 +52,9 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              Using a combination of cutting-edge technologies and reliable
-              open-source software I build user-focused, performant apps and
-              websites for smartphones, tablets, and desktops.
+              J'utilise une combinaison de technologies modernes et de logiciels
+              open-source pour construire des applications performantes et
+              orientées utilisateur, adaptées aux environnements web et mobiles.
             </p>
           </motion.div>
           <motion.div className="flex flex-wrap mt-8 flex flex-wrap justify-between ">
@@ -79,6 +79,9 @@ const About = () => {
               </motion.div>
             ))}
           </motion.div>
+          <Skills />
+          <Certifications />
+          <Experience />
         </div>
       </div>
     </div>

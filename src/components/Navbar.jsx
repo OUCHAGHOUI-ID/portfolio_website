@@ -58,7 +58,7 @@ const Navbar = () => {
                   : "text-xl font-medium text-decoration-none whitespace-nowrap text-white"
               }
             >
-              {`<ꪖꪖƙꪖకꫝ కꫝꪖꪹꪑꪖ/>`}
+              Idriss Ouchaghoui
             </a>
           </div>
           <div class="hidden justify-between items-center w-full md:flex md:w-auto ">
@@ -85,6 +85,17 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <div className="flex items-center space-x-4 ml-4">
+              <a href="https://github.com/OUCHAGHOUI-ID" target="_blank" rel="noreferrer" className={darkMode?"text-black":"text-white"}>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/idriss-ouchaghoui-2b5ab9340" target="_blank" rel="noreferrer" className={darkMode?"text-black":"text-white"}>
+                LinkedIn
+              </a>
+              <a href="mailto:drissouchaghoui119@gmail.com" className={darkMode?"text-black":"text-white"}>
+                Email
+              </a>
+            </div>
             <div onClick={() => toggleTheme()}>
               {darkMode ? (
                 <img

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Card from "../components/Card";
+import ProjectCard from "../components/ProjectCard";
 import { ThemeContext } from "../themeProvider";
 
 const Projects = () => {
@@ -12,18 +12,24 @@ const Projects = () => {
       className={darkMode ? "bg-white text-black" : "bg-gray-900 text-white"}
     >
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4  pt-24 pb-12">
-        <h2 className="text-5xl font-bold px-4 md:px-0 text-center">
-          Projects
-        </h2>
-        <h4 className="mt-16 text-3xl font-semibold text-blue-600">
-          What I Built
-        </h4>
-        <div className="mt-8 flex justify-between items-stretch flex-wrap">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <h2 className="text-5xl font-bold px-4 md:px-0 text-center">Projets</h2>
+        <h4 className="mt-16 text-3xl font-semibold text-blue-600">Projets sélectionnés</h4>
+        <div className="mt-8 flex flex-wrap justify-center items-stretch">
+          <ProjectCard
+            title="Détection de visages avec Graph Neural Networks"
+            description="Modèle basé sur les relations contextuelles utilisant le Deep Learning et des Graph Neural Networks pour améliorer la détection faciale dans des scènes complexes."
+            tech="PyTorch, GNN, Computer Vision, Deep Learning"
+          />
+          <ProjectCard
+            title="Application d'Optimisation — Recherche Opérationnelle"
+            description="Application GUI en Python implémentant des algorithmes d'optimisation et de graphe (Simplexe, Grand M, Deux phases, Branch & Bound, Dijkstra, Bellman-Ford, Kruskal, Floyd-Warshall)."
+            tech="Python, Tkinter/Qt, Algorithmes d'optimisation"
+          />
+          <ProjectCard
+            title="Applications Web Full Stack (MERN)"
+            description="Suite d'applications MERN incluant TaskMe (gestion de tâches) et une plateforme étudiante avec authentification et tableau de bord."
+            tech="MongoDB, Express, React, Node.js (MERN)"
+          />
         </div>
         <a
           href="hello"
