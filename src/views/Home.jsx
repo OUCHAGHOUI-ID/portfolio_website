@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
-import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
