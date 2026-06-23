@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
-import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
@@ -32,13 +31,7 @@ const Home = () => {
                 Idriss Ouchaghoui
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
-                  steps={[
-                    "AI Engineer & Full Stack Developer",
-                    2000,
-                  ]}
-                  loop={Infinity}
-                />
+                AI Engineer & Full Stack Developer
               </span>
             </h1>
             <p
